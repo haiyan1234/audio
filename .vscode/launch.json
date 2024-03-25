@@ -1,0 +1,17 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "针对 localhost 启动 Chrome",
+            // "url": "http://localhost:8080",  
+            // JavaScript源代码映射错误解决方案或者是vscode 不能正常打开本地前端(H5+CSS+JS)文件；就要将url修改为本地文件目录。
+            "url": "http://127.0.0.1:5500/",//"D://phy//印客//基础//music_demo//index.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

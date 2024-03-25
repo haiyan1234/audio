@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 用webpack打包的时候不需要这些 -->
+    <!-- <link rel="stylesheet" href="./css/font-awesome.min.css"> -->
+    <!-- 引入css样式 -->
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+</head>
+<body>
+    <!-- 页面背景 -->
+    <!-- 4、需要动态渲染背景图片 -->
+    <div class="mask_bg"></div>
+
+
+    <!-- 音乐播放器 -->
+    <div class="player_warp">
+
+        <!-- 歌曲信息的卡片 -->
+        <div class="player_info">
+            <!-- 歌曲信息 -->
+            <div class="info">
+                <!-- 2、需要动态渲染姓名、歌手、时间等 -->
+                <div class="name"><!-- 我记得 --></div>
+                <div class="singer_ablum"><!-- 赵雷 - 署前街少年 --></div>
+                
+                <div class="music_progress">
+                    <!-- 进度条的时间 -->
+                    <div class="music_progress_top">
+                        <span class="current_time">00:00</span>
+                        <span class="time"><!-- 05:29 --></span>
+                    </div>
+                    <!-- 进度条的显示线 -->
+                    <div class="music_progress_bar">
+                        <div class="music_progress_line"></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+        <!-- 音乐控制器 -->
+        <div class="player_control">
+            <!-- 封面 -->
+            <!-- 3、需要动态渲染转动的图片 -->
+            <div class="cover">
+                <img src="" alt="">
+            </div>
+            <!-- 控制按钮 -->
+            <div class="control">
+                <i id="prevBtn" class="fa fa-step-backward"></i>
+                <i id="playBtn" class="fa fa-play"></i><!-- 播放按钮:点击这个三角形按钮即可播放的意思 -->
+                <i id="nextBtn" class="fa fa-step-forward"></i>
+                <i id="openModal" class="fa fa-reorder"></i><!-- 音乐列表 -->
+            </div>
+        </div>   
+    </div>
+
+
+    <!-- 模态框 -->
+    <!-- 5、需要用js动态渲染模态框 -->
+    <div class="modal">
+        <div class="modal_box">
+            <!-- 模态框头部 -->
+           <div class=" modal_box_top">
+                <div class="modal_title">音乐列表</div>
+                <div class="modal_close">
+                    <i class="fa fa-remove"></i>
+                </div>
+           </div>
+
+           <!-- 模态框音乐列表 -->
+           <div class="modal_wrapper">
+            <ul class="music_list">
+                <!-- 1、需要用js动态渲染音乐列表 -->
+                <!-- <li class="playing">
+                    <span>01. 我记得 - 赵雷</span>
+                    <span class="fa fa-play-circle play_circle"></span>
+                </li>
+                <li>
+                    <span>01. 我记得 - 赵雷</span>
+                    <span class="fa fa-play-circle play_circle"></span>
+                </li>
+                <li>
+                    <span>01. 我记得 - 赵雷</span>
+                    <span class="fa fa-play-circle play_circle"></span>
+                </li>
+                <li>
+                    <span>01. 我记得 - 赵雷</span>
+                    <span class="fa fa-play-circle play_circle"></span>
+                </li>
+                <li>
+                    <span>01. 我记得 - 赵雷</span>
+                    <span class="fa fa-play-circle play_circle"></span>
+                </li> -->
+            </ul>
+           </div>
+        </div>
+    </div>
+
+
+    <audio src=""></audio><!-- 音频 -->
+
+    <!-- 用webpack打包的时候不需要这些 -->
+    <!-- <script src="./js/jquery.js"></script>先引入jQuery -->
+    <!-- <script src="./js/index.js"></script> -->
+
+</body>
+</html>
